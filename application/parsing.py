@@ -7,10 +7,10 @@ class Parser(object):
             description="Thiscrush Shitstormer written in Python by Emanuele Lillo."
         )
         self.parser.add_argument(
-            "username", help="User's Account.", metavar="U"
+            "username", help="User's Account."
         )
         self.parser.add_argument(
-            "-c", "--times", default=5, help="Requests per Thread. (RPT)", type=int
+            "-c", "--count", default=5, help="Requests per Thread. (RPT)", type=int, metavar="COUNT PER THREAD"
         )
         self.parser.add_argument(
             "-t", "--threads", default=1, help="Thread count.", type=int
@@ -33,7 +33,7 @@ class Parser(object):
         print(self.account)
 
         print("RPT: ", end="")
-        self.times = args.times
+        self.times = args.count
         print(self.times)
         
         print("Threads Count: ", end="")

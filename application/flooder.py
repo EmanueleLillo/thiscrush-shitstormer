@@ -20,7 +20,7 @@ class Flooder(object):
             print("Thread {0} - Creating Request #{1}...".format(str(thread), str(time)))
             self.client.resolve()
             print("Thread {0} - Request #{1} resolved.".format(str(thread), str(time)))
-        print("Thread {0} Done.")
+        print("Thread {0} Done.".format(str(thread)))
     
     def __startFlood(self):
         self.client = PostRequest(
