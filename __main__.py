@@ -1,6 +1,6 @@
 from application import App
 from sys import argv
 
-uniqueArgv = " ".join(argv)
+app = App()
 
-app = App(args=uniqueArgv)
+app.start(argv=argv)
