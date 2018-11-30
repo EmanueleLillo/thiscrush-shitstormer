@@ -4,7 +4,7 @@ from math import ceil
 
 class Flooder(object):
     def floodAccount(self):
-        self.url = "http://thiscrush.com/postcrush.php"
+        self.url = "http://thiscrush.net/postcrush.php"
         self.payload = {
             "id": str(self.account),
             "private": "",
